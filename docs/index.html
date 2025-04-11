@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cahlen Humphreys - Technologist & AI Enthusiast</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: #121212;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
+    
+    /* Header Styles */
+    header {
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    header ul {
+      list-style: none;
+      display: flex;
+    }
+    header ul li {
+      margin-left: 1.5rem;
+    }
+    header ul li a {
+      color: #fff;
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+    header ul li a:hover {
+      transform: scale(1.1);
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding-top: 100px;
+      text-align: center;
+      padding-bottom: 50px;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Section Styles */
+    section {
+      padding: 4rem 2rem;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .section-header h2 {
+      font-size: 2.5rem;
+      border-bottom: 2px solid #7928ca;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    /* Grid for Projects and Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 2rem;
+    }
+    .card {
+      background: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+    }
+    
+    /* Footer */
+    .footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+    }
+    .footer a {
+      color: #7928ca;
+      margin: 0 0.5rem;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      header ul li { margin-left: 1rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">
+        Cahlen Humphreys
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Cahlen Humphreys</h1>
+    <p>"If you're not always learning, you're always falling behind."</p>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <p>Hello! I'm Cahlen Humphreys – a passionate technologist based in Irvine, CA. As the Managing Principal at Enfuse.io, I specialize in AI Software Engineering, Edge AI, LLMs, Computer Vision, Distributed Systems, and Real-Time Analytics.</p>
+      <p>I’m a big fan of artificial intelligence, mathematics, and computer science, with a keen interest in neural networks—pushing boundaries using techniques like continued fraction neural networks to enhance interpretability and explainability in AI.</p>
+      <p>Beyond the technical realm, I enjoy motorcycles, heavy metal music (I even participated in a music video for Slaughter to Prevail), and engaging with the tech community through open source contributions and speaking engagements.</p>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="content grid">
+      <div class="card">
+        <h3>Conversation Dataset Generator</h3>
+        <p>A cutting-edge tool that simplifies and accelerates the creation of conversational datasets (in JSONL format) for chatbots, sentiment analysis, dialogue systems, and more.</p>
+      </div>
+      <div class="card">
+        <h3>Basic SCDF Pipeline</h3>
+        <p>A basic Spring Cloud Data Flow docker-compose pipeline featuring source, transform, and sink components to streamline data processing.</p>
+      </div>
+      <div class="card">
+        <h3>Yelp ML</h3>
+        <p>An ML project leveraging the public Yelp dataset along with scikit-learn to derive insights and build predictive models.</p>
+      </div>
+      <div class="card">
+        <h3>Keeloq Python</h3>
+        <p>An implementation of the Keeloq crypto system written in Python, showcasing secure communication techniques.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Achievements and Expertise Section -->
+  <section id="achievements">
+    <div class="section-header">
+      <h2>Achievements & Expertise</h2>
+    </div>
+    <div class="content">
+      <h3>Achievements</h3>
+      <ul>
+        <li>Achievement: YOLO</li>
+        <li>Achievement: Arctic Code Vault Contributor</li>
+        <li>Achievement: Pull Sharkx3</li>
+        <li>Achievement: Starstruck</li>
+      </ul>
+      <h3>Skills & Technologies</h3>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python, Java</li>
+        <li><strong>Data & AI Platforms:</strong> Nvidia TensorRT, Nvidia TensorRT-LLM, Nvidia NeMo, Apache Spark, Hadoop, and more</li>
+        <li><strong>AI Frameworks:</strong> PyTorch, TensorFlow, Neural Networks</li>
+        <li><strong>Cloud Platforms:</strong> AWS (Certified Solutions Architect), Microsoft Azure</li>
+        <li><strong>Expertise:</strong> Machine Learning, Real-Time AI at the Edge, Distributed Systems, Data Pipelines, CI/CD</li>
+      </ul>
+      <h3>Research Interests</h3>
+      <ul>
+        <li>Exploring continued fraction neural networks for enhanced interpretability in AI</li>
+        <li>Investigating Cache-Augmented Generation (CAG) to reduce latency in retrieval-augmented workflows</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Speaking Engagements Section -->
+  <section id="speaking">
+    <div class="section-header">
+      <h2>Speaking Engagements</h2>
+    </div>
+    <div class="content">
+      <ul>
+        <li>
+          <strong>Nvidia GTC 2025 (San Jose, CA):</strong> Agentic AI at the Edge – Real-Time Sentiment Analysis for Engaging Customer Interaction.
+        </li>
+        <li>
+          <strong>Datacon LA 2021 (Virtual):</strong> Building Production Data Pipelines with Test Driven Development (TDD) and Pair Programming.
+        </li>
+        <li>
+          <strong>Data Intensive Application Meetup (Irvine, CA):</strong> Massive Data Processing at Scale.
+        </li>
+        <li>
+          <strong>SpringOne Platform 2019 (Austin, TX):</strong> High Speed Data Processing with Apache Geode and Spring Cloud Stream.
+        </li>
+        <li>
+          <strong>SpringOne Platform 2018 (Washington, DC):</strong> Continuous Data Governance with Spring Cloud Data Flow.
+        </li>
+        <li>
+          <strong>Apache Geode Summit 2016 (Palo Alto, CA):</strong> Predicting and Preventing Vehicle Failures Using Streaming Telematics Analysis.
+        </li>
+        <li>
+          <strong>IBM Datapalooza 2015 (San Francisco, CA):</strong> Real Time Vehicle Telematics.
+        </li>
+        <li>
+          <strong>Pivotal Labs Meetup 2015 (San Francisco, CA):</strong> Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis.
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Connect with Me</h2>
+    </div>
+    <div class="content">
+      <p>Email: <a href="mailto:cahlen@gmail.com" style="color:#7928ca;">cahlen@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/cahlenhumphreys" target="_blank" style="color:#7928ca;">LinkedIn Profile</a></p>
+      <p>X (formerly Twitter): <a href="https://x.com/enfuse" target="_blank" style="color:#7928ca;">@enfuse</a></p>
+      <p>Website: <a href="https://enfuse.io" target="_blank" style="color:#7928ca;">Enfuse.io</a></p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Cahlen Humphreys. All rights reserved.</p>
+  </footer>
+  
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
