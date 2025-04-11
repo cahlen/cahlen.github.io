@@ -54,17 +54,17 @@
       font-size: 1.2em;
       font-weight: bold;
     }
-     /* Placeholder for a spinning @ sign GIF */
-     .spinning-gif {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        vertical-align: middle;
-        /* --- Cahlen: Replace background-color with your actual GIF --- */
-        background-color: yellow;
-        border: 1px solid red;
-        margin: 0 5px;
-     }
+    /* Placeholder for a spinning @ sign GIF */
+    .spinning-gif {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      /* --- Cahlen: Replace background-color with your actual GIF --- */
+      background-color: yellow;
+      border: 1px solid red;
+      margin: 0 5px;
+    }
 
     /* --- Navigation Buttons (Browser Style) --- */
     .navigation {
@@ -91,7 +91,7 @@
       background-color: #B0B0B0; /* Slightly darker grey when pushed */
     }
     .nav-button:hover {
-        background-color: #D0D0D0; /* Slight highlight on hover */
+      background-color: #D0D0D0; /* Slight highlight on hover */
     }
 
     /* --- Section Styling --- */
@@ -120,17 +120,17 @@
       margin-bottom: 10px;
       font-size: 14px; /* Ensure consistent font size */
     }
-     .content ul {
-        list-style: square inside; /* Classic square bullets */
-        padding-left: 0; /* Reset padding */
-     }
-     .content h3 {
-        font-family: 'Times New Roman', Times, serif; /* Classic Serif */
-        color: #006400; /* Dark Green */
-        font-size: 1.3em;
-        margin-top: 15px;
-        margin-bottom: 8px;
-     }
+    .content ul {
+      list-style: square inside; /* Classic square bullets */
+      padding-left: 0; /* Reset padding */
+    }
+    .content h3 {
+      font-family: 'Times New Roman', Times, serif; /* Classic Serif */
+      color: #006400; /* Dark Green */
+      font-size: 1.3em;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
 
     /* --- About Me Specifics --- */
     .profile-pic {
@@ -144,12 +144,12 @@
       padding: 2px; /* Small padding inside border */
     }
     .profile-pic-caption {
-        text-align: center;
-        font-size: 11px;
-        font-style: italic;
-        color: #555;
-        margin-top: -8px; /* Pull caption closer */
-        margin-bottom: 10px;
+      text-align: center;
+      font-size: 11px;
+      font-style: italic;
+      color: #555;
+      margin-top: -8px; /* Pull caption closer */
+      margin-bottom: 10px;
     }
 
     /* --- Projects (Cards replaced with simpler boxes) --- */
@@ -159,20 +159,20 @@
       padding: 10px;
       margin-bottom: 15px;
     }
-     .project-box h3 {
-        margin-top: 0;
-        color: #800080; /* Purple */
-     }
-      /* Placeholder for small project icons */
+    .project-box h3 {
+      margin-top: 0;
+      color: #800080; /* Purple */
+    }
+    /* Placeholder for small project icons */
     .project-icon {
-        width: 24px;
-        height: 24px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 8px;
-        /* --- Cahlen: Replace background-color with small icons --- */
-        background-color: cyan;
-        border: 1px solid blue;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      /* --- Cahlen: Replace background-color with small icons --- */
+      background-color: cyan;
+      border: 1px solid blue;
     }
 
 
@@ -186,8 +186,8 @@
       color: #000080; /* Navy */
     }
     #achievements ul {
-        list-style-image: url('data:image/gif;base64,R0lGODlhCgAKAIABAAAAAP///yH5BAEAAAEALAAAAAAKAAoAAAIQjI+pyzkz63wIAmUihkFwVgAAOw=='); /* Tiny black square GIF bullet */
-        padding-left: 20px;
+      list-style-image: url('data:image/gif;base64,R0lGODlhCgAKAIABAAAAAP///yH5BAEAAAEALAAAAAAKAAoAAAIQjI+pyzkz63wIAmUihkFwVgAAOw=='); /* Tiny black square GIF bullet */
+      padding-left: 20px;
     }
 
 
@@ -210,22 +210,29 @@
       color: #333333;
     }
     .footer a {
-        color: #0000FF; /* Bright blue links */
-        text-decoration: underline;
+      color: #0000FF; /* Bright blue links */
+      text-decoration: underline;
     }
     .footer a:hover {
-        color: #FF0000; /* Red hover */
+      color: #FF0000; /* Red hover */
+    }
+    /* Style for footer images, including new browser buttons */
+    .footer img { 
+       vertical-align: middle; /* Align buttons nicely with text */
+       margin-left: 5px; /* Add some spacing */
+       margin-right: 5px;
+       /* Keep existing inline styles for specific images if needed */
     }
     /* Fake Hit Counter! */
     .hit-counter {
-        border: 1px solid black;
-        background-color: black;
-        color: lime;
-        padding: 2px 8px;
-        font-family: 'Courier New', monospace;
-        font-size: 14px;
-        display: inline-block;
-        margin-top: 10px;
+      border: 1px solid black;
+      background-color: black;
+      color: lime;
+      padding: 2px 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     /* --- Basic Responsiveness (GeoCities wasn't very responsive!) --- */
@@ -237,11 +244,13 @@
       .nav-button { padding: 6px 10px; margin: 3px; min-width: 80px; }
       .profile-pic { float: none; display: block; margin: 10px auto; width: 120px; }
       .section-header h2 { font-size: 1.3em; }
+      /* Adjust iframe size for smaller screens */
+      #retro-game iframe { max-width: 95%; height: auto; aspect-ratio: 600 / 450; }
     }
-     @media (max-width: 480px) {
-        .navigation { display: flex; flex-wrap: wrap; justify-content: center;}
-        .nav-button { flex-basis: 40%; margin: 5px;} /* Stack buttons */
-     }
+    @media (max-width: 480px) {
+      .navigation { display: flex; flex-wrap: wrap; justify-content: center;}
+      .nav-button { flex-basis: 40%; margin: 5px;} /* Stack buttons */
+    }
 
   </style>
 </head>
@@ -259,7 +268,7 @@
       <a href="#projects" class="nav-button">PROJECTS</a>
       <a href="#achievements" class="nav-button">SKILLS</a>
       <a href="#speaking" class="nav-button">TALKS</a>
-      <a href="#contact" class="nav-button">CONTACT</a>
+      <a href="#retro-game" class="nav-button">GAME</a> <a href="#contact" class="nav-button">CONTACT</a>
     </div>
 
     <section id="about">
@@ -268,7 +277,7 @@
       </div>
       <div class="content">
         <img src="placeholder-profile.jpg" alt="Cahlen Humphreys" class="profile-pic">
-        <p>Hello! I'm Cahlen Humphreys – a passionate technologist based in Irvine, CA. As the Managing Principal at <span class="tech-term">Enfuse.io</span>, I specialize in <span class="tech-term">AI Software Engineering</span>, <span class="tech-term">Edge AI</span>, <span class="tech-term">LLMs</span>, <span class="tech-term">Computer Vision</span>, <span class="tech-term">Distributed Systems</span>, and <span class="tech-term">Real-Time Analytics</span>.</p>
+         <p>Hello! I'm Cahlen Humphreys – a passionate technologist based in Irvine, CA. As the Managing Principal at <span class="tech-term">Enfuse.io</span>, I specialize in <span class="tech-term">AI Software Engineering</span>, <span class="tech-term">Edge AI</span>, <span class="tech-term">LLMs</span>, <span class="tech-term">Computer Vision</span>, <span class="tech-term">Distributed Systems</span>, and <span class="tech-term">Real-Time Analytics</span>.</p>
         <p>I’m a big fan of artificial intelligence, mathematics, and computer science, with a keen interest in neural networks—pushing boundaries using techniques like <span class="tech-term">continued fraction neural networks</span> to enhance interpretability and explainability in AI.</p>
         <p>Beyond the technical realm, I enjoy motorcycles, heavy metal music (I even participated in a music video for <span class="tech-term">Slaughter to Prevail</span>), and engaging with the tech community through <span class="tech-term">open source</span> contributions and speaking engagements.</p>
       </div>
@@ -283,7 +292,7 @@
       <div class="content">
 
         <div class="project-box">
-           <div class="project-icon"></div>
+          <div class="project-icon"></div>
           <h3>Conversation Dataset Generator</h3>
           <p>A cutting-edge tool that simplifies and accelerates the creation of conversational datasets (in <span class="tech-term">JSONL</span> format) for chatbots, sentiment analysis, dialogue systems, and more.</p>
         </div>
@@ -295,7 +304,7 @@
         </div>
 
         <div class="project-box">
-           <div class="project-icon"></div>
+          <div class="project-icon"></div>
           <h3>Yelp ML</h3>
           <p>An ML project leveraging the public Yelp dataset along with <span class="tech-term">scikit-learn</span> to derive insights and build predictive models.</p>
         </div>
@@ -322,7 +331,7 @@
           <li>Achievement: <span class="tech-term">Arctic Code Vault Contributor</span></li>
           <li>Achievement: <span class="tech-term">Pull Shark x3</span></li>
           <li>Achievement: <span class="tech-term">Starstruck</span></li>
-       </ul>
+        </ul>
 
         <h3>Skills &amp; Technologies</h3>
         <ul>
@@ -377,39 +386,59 @@
       </div>
     </section>
 
-     <hr class="fancy-rule">
+    <hr class="fancy-rule">
 
+    <section id="retro-game">
+        <div class="section-header">
+            <h2>** Play A Game! **</h2>
+        </div>
+        <div class="content" style="text-align: center;"> <p>Take a break and enjoy some classic Sonic the Hedgehog action, embedded right here like it's 1999!</p>
+            <iframe src="https://www.retrogames.cc/embed/30299-sonic-the-hedgehog-usa-europe.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
+            <p style="font-size: 10px; color: #555;">(Game is loaded from an external site, retrogames.cc. Availability depends on them!)</p>
+        </div>
+    </section>
+
+    <hr class="fancy-rule">
     <section id="contact">
       <div class="section-header">
         <h2>** Get In Touch! **</h2>
       </div>
-      <div class="content" style="text-align:center;"> <p>Drop me a line:</p>
-        <p>
-          <span class="spinning-gif" title="Email Icon Placeholder"></span> Email: <a href="mailto:cahlen@gmail.com">cahlen@gmail.com</a>
-        </p>
-        <p>Connect professionally:</p>
-        <p>
-           LinkedIn: <a href="https://www.linkedin.com/in/cahlenhumphreys" target="_blank">LinkedIn Profile</a>
-        </p>
-        <p>Follow my thoughts:</p>
-        <p>
-           X (formerly Twitter): <a href="https://x.com/enfuse" target="_blank">@enfuse</a>
-        </p>
-        <p>Check out the company:</p>
-        <p>
-          Website: <a href="https://enfuse.io" target="_blank">Enfuse.io</a>
-        </p>
+      <div class="content" style="text-align:center;">
+          <p>Drop me a line:</p>
+          <p>
+            <span class="spinning-gif" title="Email Icon Placeholder"></span> Email: <a href="mailto:cahlen@gmail.com">cahlen@gmail.com</a>
+          </p>
+          <p>Connect professionally:</p>
+          <p>
+            LinkedIn: <a href="https://www.linkedin.com/in/cahlenhumphreys" target="_blank">LinkedIn Profile</a>
+          </p>
+          <p>Follow my thoughts:</p>
+          <p>
+            X (formerly Twitter): <a href="https://x.com/enfuse" target="_blank">@enfuse</a>
+          </p>
+          <p>Check out the company:</p>
+          <p>
+            Website: <a href="https://enfuse.io" target="_blank">Enfuse.io</a>
+          </p>
       </div>
     </section>
 
     <div class="footer">
       <p>&copy; 1998-2025 Cahlen Humphreys. Welcome to my corner of the web!</p>
       <p>Site best viewed with Netscape Navigator 4.0 or Internet Explorer 4.0 at 800x600 resolution.</p>
-      <p>
+
+      <p style="margin-top:10px;">
+          This site is <i>officially</i> best viewed with: <br>
+          <a href="https://en.wikipedia.org/wiki/Netscape_Navigator" target="_blank"><img src="https://madsenworld.dk/anigif/browsers/netscani.gif" alt="Netscape Now! 3.0" title="Netscape Now! 3.0"></a>
+          <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank"><img src="https://madsenworld.dk/anigif/browsers/ie_anim.gif" alt="Microsoft Internet Explorer" title="Microsoft Internet Explorer"></a>
+          <br>(Just kidding... mostly!)
+      </p>
+      <p style="margin-top:10px;">
         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Powered by GeoCities (Joke)" style="height:15px; vertical-align:middle;"> This site is <span style="font-weight:bold; color:red;">UNDER CONSTRUCTION</span> (aren't they all?)
         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Under Construction" style="height:15px; vertical-align:middle;">
       </p>
-      <p>You are visitor number: <span class="hit-counter">001337</span></p> </div>
+      <p>You are visitor number: <span class="hit-counter">001337</span></p>
+    </div>
 
-  </div></body>
+  </div> </body>
 </html>
