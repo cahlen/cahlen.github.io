@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cahlen Humphreys' Tech & AI Hub!! - est. 1998</title>
+  <title>!!!*** Cahlen Humphreys' Tech & AI Hub!! ***!!! - est. 1998</title>
   <style>
-    /* --- GeoCities/IRC Inspired Styles --- */
+    /* --- MORE GeoCities/IRC Inspired Styles --- */
+
+    /* Add blinking animation */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
 
     body {
-      /* Classic tiled background - using CSS gradients to simulate common patterns */
-      background-color: #000033; /* Dark blue fallback */
-      background-image: radial-gradient(#cccccc 1px, transparent 1px),
-                        radial-gradient(#cccccc 1px, transparent 1px);
-      background-size: 10px 10px;
-      background-position: 0 0, 5px 5px;
+      /* Classic TILING space background! */
+      background-color: #000000; /* Black fallback */
+      /* Find a real tiling background GIF/JPG online for best effect */
+      /* Using a CSS gradient placeholder here */
+       background-image: url('https://www.example.com/path/to/your/tiling-space-background.gif'); /* <-- REPLACE THIS URL */
+       /* Fallback CSS pattern if image fails */
+       background-image: linear-gradient(45deg, #1a1a2e 25%, transparent 25%),
+                         linear-gradient(-45deg, #1a1a2e 25%, transparent 25%),
+                         linear-gradient(45deg, transparent 75%, #1a1a2e 75%),
+                         linear-gradient(-45deg, transparent 75%, #1a1a2e 75%);
+       background-size: 20px 20px;
+       background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 
-      /* Standard 'safe' fonts */
-      font-family: 'Verdana', 'Arial', sans-serif;
-      font-size: 14px; /* Slightly smaller default */
+      /* Standard 'safe' fonts, maybe lean into Times New Roman more? */
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px; /* Slightly larger default */
       color: #000000; /* Black text on content area */
       margin: 0;
       padding: 0;
@@ -26,44 +39,54 @@
     /* Main Content Container - The 'Page' */
     .container {
       width: 90%;
-      max-width: 900px; /* Fixed-ish width */
+      max-width: 850px; /* Slightly narrower maybe */
       margin: 20px auto; /* Center the box */
       background: #C0C0C0; /* Classic Windows grey */
-      border: 3px outset #E0E0E0; /* 3D border effect */
+      border: 5px outset #E0E0E0; /* THICKER 3D border effect */
       padding: 15px;
-      box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Drop shadow */
+      /* box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /* Shadows feel a bit too modern */
     }
 
     /* --- Header Area --- */
     .header {
       text-align: center;
-      border-bottom: 2px solid #808080;
+      border-bottom: 3px double #808080; /* Double border */
       padding-bottom: 15px;
       margin-bottom: 20px;
+      background-color: #AAAAFF; /* Light blue header bg */
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+      border-right: 3px solid black;
+      border-bottom: 3px solid black;
     }
     .header h1 {
-      font-family: 'Impact', 'Arial Black', sans-serif; /* Bold, blocky font */
-      color: #000080; /* Navy Blue */
-      font-size: 2.5em;
-      margin-bottom: 5px;
-      letter-spacing: 2px;
+      font-family: 'Impact', 'Arial Black', sans-serif; /* Keep Impact */
+      color: #FF0000; /* BRIGHT RED */
+      font-size: 3em; /* Even Bigger */
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px #000000; /* Hard shadow */
+      /* Add blinking effect! */
+       animation: blink 1.5s linear infinite; /* <-- WARNING: Can be annoying! Remove if needed */
     }
     .header .subtitle {
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* The ultimate GeoCities font! */
-      color: #800080; /* Purple */
-      font-size: 1.2em;
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Definitely keep Comic Sans */
+      color: #0000FF; /* BRIGHT BLUE */
+      font-size: 1.4em;
       font-weight: bold;
+      background-color: yellow; /* Yellow background */
+      padding: 5px;
+      display: inline-block; /* Needed for marquee padding */
     }
-    /* Placeholder for a spinning @ sign GIF */
+    /* Actual spinning email GIF */
     .spinning-gif {
-      width: 20px;
-      height: 20px;
+      width: 30px; /* Adjust size based on actual GIF */
+      height: 30px;
       display: inline-block;
       vertical-align: middle;
-      /* --- Cahlen: Replace background-color with your actual GIF --- */
-      background-color: yellow;
-      border: 1px solid red;
       margin: 0 5px;
+      /* Placeholder for a real GIF */
+      content: url('https://i.imgur.com/3lFustU.gif'); /* Example animated email GIF */
     }
 
     /* --- Navigation Buttons (Browser Style) --- */
@@ -75,181 +98,208 @@
     .nav-button {
       display: inline-block;
       font-family: 'Arial', sans-serif;
-      font-size: 12px; /* Smaller button text */
+      font-size: 14px; /* Slightly larger */
       font-weight: bold;
       color: #000000;
       background-color: #C0C0C0; /* Button grey */
-      border: 2px outset #E0E0E0; /* 3D outset border */
-      padding: 8px 15px;
-      margin: 0 5px;
+      border: 3px outset #E0E0E0; /* Thicker outset border */
+      padding: 10px 20px;
+      margin: 5px 8px; /* More spacing */
       text-decoration: none;
-      min-width: 100px; /* Ensure buttons have some width */
+      min-width: 110px;
       cursor: pointer; /* Hand cursor */
     }
     .nav-button:active {
       border-style: inset; /* Push button effect */
-      background-color: #B0B0B0; /* Slightly darker grey when pushed */
+      background-color: #A0A0A0; /* Darker grey when pushed */
     }
     .nav-button:hover {
-      background-color: #D0D0D0; /* Slight highlight on hover */
+      background-color: #FFFF00; /* YELLOW HOVER! */
+      color: #FF0000; /* Red text on hover */
     }
 
     /* --- Section Styling --- */
     section {
-      margin-bottom: 25px;
-      padding: 15px;
-      border: 1px dashed #808080; /* Dashed border around sections */
-      background-color: #D8D8D8; /* Slightly lighter grey for section bg */
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 3px double #000080; /* Navy double border */
+      background-color: #FFFFFF; /* White section background for contrast */
     }
     .section-header {
-      text-align: left;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #A0A0A0;
-      padding-bottom: 5px;
+      text-align: center; /* Center section headers */
+      margin-bottom: 20px;
+      border-bottom: 2px dashed #FF00FF; /* Magenta dashed border */
+      padding-bottom: 10px;
     }
     .section-header h2 {
-      font-family: 'Courier New', Courier, monospace; /* IRC Monospace font */
-      font-size: 1.5em;
-      color: #000080; /* Navy */
+      font-family: 'Courier New', Courier, monospace; /* Keep IRC Monospace */
+      font-size: 1.8em; /* Larger */
+      color: #FFFFFF; /* White text */
       display: inline-block;
-      background-color: #FFFF00; /* Yellow highlight background */
-      padding: 2px 5px;
+      background-color: #008000; /* DARK GREEN background */
+      padding: 5px 15px;
+      border: 2px solid #FFFF00; /* Yellow border */
     }
     .content p, .content ul, .content li {
-      line-height: 1.6;
-      margin-bottom: 10px;
-      font-size: 14px; /* Ensure consistent font size */
+      line-height: 1.7; /* More spacing */
+      margin-bottom: 12px;
+      font-size: 15px;
     }
     .content ul {
-      list-style: square inside; /* Classic square bullets */
-      padding-left: 0; /* Reset padding */
+      list-style: square inside; /* Keep square bullets */
+      padding-left: 0;
     }
     .content h3 {
-      font-family: 'Times New Roman', Times, serif; /* Classic Serif */
-      color: #006400; /* Dark Green */
-      font-size: 1.3em;
-      margin-top: 15px;
-      margin-bottom: 8px;
+      font-family: 'Brush Script MT', cursive; /* Cursive Font! */
+      color: #800080; /* Purple */
+      font-size: 1.6em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
     }
 
     /* --- About Me Specifics --- */
     .profile-pic {
-      float: right; /* Float image to the right */
-      margin: 0 0 10px 15px;
-      border: 2px solid #808080; /* Simple border */
-      width: 150px; /* Adjust size as needed */
+      float: right;
+      margin: 0 0 15px 20px;
+      border: 4px outset silver; /* Thicker bevel border */
+      border-bottom-color: #555;
+      border-right-color: #555;
+      width: 160px; /* Slightly bigger */
       height: auto;
-      /* --- Cahlen: Replace background-color with your actual photo --- */
-      background-color: #A0A0A0;
-      padding: 2px; /* Small padding inside border */
+      background-color: #A0A0A0; /* Placeholder bg */
+      padding: 3px;
     }
-    .profile-pic-caption {
-      text-align: center;
-      font-size: 11px;
-      font-style: italic;
-      color: #555;
-      margin-top: -8px; /* Pull caption closer */
-      margin-bottom: 10px;
-    }
+    /* --- Cahlen: Replace the src below with your actual photo --- */
+    /* img.profile-pic[src="placeholder-profile.jpg"] {
+         content: url('your-actual-photo.jpg');
+    } */
 
-    /* --- Projects (Cards replaced with simpler boxes) --- */
+
+    /* --- Projects (Simpler boxes) --- */
     .project-box {
-      background: #E8E8E8; /* Even lighter background */
-      border: 1px solid #A0A0A0;
-      padding: 10px;
-      margin-bottom: 15px;
+      background: #E0FFFF; /* Light Cyan background */
+      border: 2px solid #008B8B; /* Dark Cyan border */
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: center; /* Center project content */
     }
     .project-box h3 {
       margin-top: 0;
-      color: #800080; /* Purple */
+      color: #FF4500; /* OrangeRed */
+      font-family: 'Verdana', sans-serif; /* Back to something readable */
+      font-size: 1.4em;
     }
-    /* Placeholder for small project icons */
+    /* Placeholder for small project icons - USE REAL GIFS! */
     .project-icon {
-      width: 24px;
-      height: 24px;
-      display: inline-block;
+      width: 32px; /* Larger icons */
+      height: 32px;
+      display: block; /* Center the icon */
+      margin: 0 auto 10px auto;
       vertical-align: middle;
-      margin-right: 8px;
-      /* --- Cahlen: Replace background-color with small icons --- */
-      background-color: cyan;
+      /* Example using a placeholder - replace with actual icons */
+      content: url('https://i.imgur.com/M08k4zT.gif'); /* Example folder GIF */
       border: 1px solid blue;
     }
 
 
     /* --- Skills / Tech Terms Emphasis --- */
     .tech-term {
-      font-family: 'Courier New', Courier, monospace; /* Monospace for tech */
-      background-color: #FFFFFF; /* White background */
-      border: 1px solid #A0A0A0;
-      padding: 1px 3px;
-      font-size: 0.95em; /* Slightly smaller */
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #FFFFE0; /* Light Yellow background */
+      border: 1px dashed #FFA500; /* Orange dashed border */
+      padding: 2px 4px;
+      font-size: 1.0em; /* Normal size */
       color: #000080; /* Navy */
+      font-weight: bold;
     }
     #achievements ul {
-      list-style-image: url('data:image/gif;base64,R0lGODlhCgAKAIABAAAAAP///yH5BAEAAAEALAAAAAAKAAoAAAIQjI+pyzkz63wIAmUihkFwVgAAOw=='); /* Tiny black square GIF bullet */
-      padding-left: 20px;
+      /* Use a classic star bullet GIF */
+       list-style-image: url('https://i.imgur.com/oThWrH7.gif'); /* Example spinning star */
+      padding-left: 30px; /* More indent for image */
     }
 
 
-    /* --- Horizontal Rule --- */
-    hr.fancy-rule {
-      border: 0;
-      height: 10px; /* Adjust height */
-      /* Repeating image - simulating classic HR GIFs */
-      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, indigo, blue, green, yellow, orange, red);
-      margin: 25px 0;
+    /* --- Horizontal Rule - Use an animated GIF! --- */
+    .animated-hr {
+        display: block;
+        margin: 30px auto; /* Center the HR */
+        width: 80%; /* Or adjust as needed */
+        /* Placeholder - replace with actual animated HR GIF */
+        content: url('https://i.imgur.com/i3kZ1jX.gif'); /* Example animated line GIF */
     }
+
 
     /* --- Footer --- */
     .footer {
       text-align: center;
-      margin-top: 25px;
-      padding-top: 15px;
-      border-top: 2px solid #808080;
-      font-size: 12px;
-      color: #333333;
+      margin-top: 30px;
+      padding: 20px;
+      border-top: 5px groove #FFA500; /* Orange groove border */
+      background-color: #FFFFE0; /* Light yellow footer */
+      font-size: 14px;
+      color: #000000; /* Black text */
     }
     .footer a {
       color: #0000FF; /* Bright blue links */
       text-decoration: underline;
+      font-weight: bold;
     }
     .footer a:hover {
-      color: #FF0000; /* Red hover */
+      color: #FF00FF; /* Magenta hover */
+      background-color: #FFFF00; /* Yellow background hover */
     }
-    /* Style for footer images, including new browser buttons */
-    .footer img { 
-       vertical-align: middle; /* Align buttons nicely with text */
-       margin-left: 5px; /* Add some spacing */
-       margin-right: 5px;
-       /* Keep existing inline styles for specific images if needed */
+    .footer img {
+       vertical-align: middle;
+       margin: 5px; /* Spacing around images */
+       border: none; /* Ensure no borders on badges */
     }
-    /* Fake Hit Counter! */
+    /* Fake Hit Counter - More authentic look */
     .hit-counter {
-      border: 1px solid black;
+      border: 2px outset #808080;
       background-color: black;
       color: lime;
-      padding: 2px 8px;
+      padding: 5px 15px;
       font-family: 'Courier New', monospace;
-      font-size: 14px;
+      font-size: 18px;
       display: inline-block;
-      margin-top: 10px;
+      margin: 15px 0;
+      letter-spacing: 3px;
+    }
+    /* Construction GIF */
+    .construction-gif {
+      height: 31px; /* Match common button height */
+      width: auto;
+      vertical-align: middle;
+      margin: 0 10px;
+      /* Example - replace with actual GIF */
+      content: url('https://i.imgur.com/MnU84sN.gif'); /* Example construction GIF */
+    }
+    .footer p {
+        margin-bottom: 15px; /* More space between footer paragraphs */
     }
 
-    /* --- Basic Responsiveness (GeoCities wasn't very responsive!) --- */
+    /* --- Basic Responsiveness (Keep for usability, but less emphasis) --- */
     @media (max-width: 768px) {
-      body { font-size: 13px; }
-      .container { width: 95%; padding: 10px; }
-      .header h1 { font-size: 2em; }
-      .header .subtitle { font-size: 1em; }
-      .nav-button { padding: 6px 10px; margin: 3px; min-width: 80px; }
-      .profile-pic { float: none; display: block; margin: 10px auto; width: 120px; }
-      .section-header h2 { font-size: 1.3em; }
-      /* Adjust iframe size for smaller screens */
-      #retro-game iframe { max-width: 95%; height: auto; aspect-ratio: 600 / 450; }
+      body { font-size: 14px; }
+      .container { width: 95%; padding: 10px; border-width: 3px; }
+      .header h1 { font-size: 2.2em; letter-spacing: 1px; }
+      .header .subtitle { font-size: 1.1em; }
+      .nav-button { padding: 8px 15px; margin: 4px; font-size: 12px; }
+      .profile-pic { float: none; display: block; margin: 15px auto; width: 130px; }
+      .section-header h2 { font-size: 1.5em; }
+      section { padding: 15px; }
+      #retro-game iframe { max-width: 98%; height: auto; aspect-ratio: 4 / 3; }
+      .animated-hr { width: 90%; }
     }
     @media (max-width: 480px) {
-      .navigation { display: flex; flex-wrap: wrap; justify-content: center;}
-      .nav-button { flex-basis: 40%; margin: 5px;} /* Stack buttons */
+      .navigation { display: block; } /* Stack buttons */
+      .nav-button { display: block; width: 80%; margin: 8px auto; }
+      .header h1 { font-size: 1.8em; }
+      .header .subtitle { font-size: 1em; }
+      .profile-pic { width: 100px; }
+      .footer { font-size: 12px; }
+      .hit-counter { font-size: 14px; padding: 3px 10px; }
     }
 
   </style>
@@ -259,207 +309,199 @@
   <div class="container">
 
     <div class="header">
-      <h1>Cahlen Humphreys :: Tech Zone</h1>
-      <div class="subtitle">// AI Enthusiast &amp; Code Slinger //</div>
+       <marquee behavior="scroll" direction="left" scrollamount="5">
+         <span class="subtitle">// AI Enthusiast &amp; Code Slinger //</span>
+       </marquee>
+       <h1>Cahlen Humphreys :: Tech Zone</h1>
     </div>
 
     <div class="navigation">
-      <a href="#about" class="nav-button">ABOUT</a>
-      <a href="#projects" class="nav-button">PROJECTS</a>
-      <a href="#achievements" class="nav-button">SKILLS</a>
-      <a href="#speaking" class="nav-button">TALKS</a>
-      <a href="#retro-game" class="nav-button">GAME</a> <a href="#contact" class="nav-button">CONTACT</a>
+      <a href="#about" class="nav-button">ABOUT ME</a>
+      <a href="#projects" class="nav-button">MY COOL PROJECTS</a>
+      <a href="#achievements" class="nav-button">MAD SKILLZ</a>
+      <a href="#speaking" class="nav-button">TALKS 'N STUFF</a>
+      <a href="#retro-game" class="nav-button">PLAY SONIC!</a>
+      <a href="#contact" class="nav-button">CONTACT ME</a>
     </div>
 
     <section id="about">
       <div class="section-header">
-        <h2>** About Me **</h2>
+        <h2>** WHO AM I?! **</h2>
       </div>
       <div class="content">
-        <img src="placeholder-profile.jpg" alt="Cahlen Humphreys" class="profile-pic">
-         <p>Hello! I'm Cahlen Humphreys – a passionate technologist based in Irvine, CA. As the Managing Principal at <span class="tech-term">Enfuse.io</span>, I specialize in <span class="tech-term">AI Software Engineering</span>, <span class="tech-term">Edge AI</span>, <span class="tech-term">LLMs</span>, <span class="tech-term">Computer Vision</span>, <span class="tech-term">Distributed Systems</span>, and <span class="tech-term">Real-Time Analytics</span>.</p>
-        <p>I’m a big fan of artificial intelligence, mathematics, and computer science, with a keen interest in neural networks—pushing boundaries using techniques like <span class="tech-term">continued fraction neural networks</span> to enhance interpretability and explainability in AI.</p>
-        <p>Beyond the technical realm, I enjoy motorcycles, heavy metal music (I even participated in a music video for <span class="tech-term">Slaughter to Prevail</span>), and engaging with the tech community through <span class="tech-term">open source</span> contributions and speaking engagements.</p>
+         <img src="placeholder-profile.jpg" alt="Cahlen Humphreys - Rockin'!" class="profile-pic">
+        <p>Wassup Net-Surfer! I'm Cahlen Humphreys – your friendly neighborhood technologist beaming in from Irvine, CA. I run the show at <span class="tech-term">Enfuse.io</span> as Managing Principal, diving deep into <span class="tech-term">AI Software Engineering</span>, <span class="tech-term">Edge AI</span>, <span class="tech-term">LLMs</span>, <span class="tech-term">Computer Vision</span>, <span class="tech-term">Distributed Systems</span>, and totally rad <span class="tech-term">Real-Time Analytics</span>.</p>
+        <p>Artificial intelligence, hardcore mathematics, and computer science are my jam! I'm especially stoked about neural networks and exploring wild stuff like <span class="tech-term">continued fraction neural networks</span> to make AI less of a mystery box.</p>
+        <p>When I'm not coding like a madman, you might find me cruising on my motorcycle, headbanging to heavy metal (yeah, I was in a <span class="tech-term">Slaughter to Prevail</span> music video!), contributing to <span class="tech-term">open source</span>, or sharing my tech knowledge at conferences.</p>
       </div>
     </section>
 
-    <hr class="fancy-rule">
+    <img src="https://i.imgur.com/i3kZ1jX.gif" alt="Animated Divider" class="animated-hr">
 
     <section id="projects">
       <div class="section-header">
-        <h2>** My Projects **</h2>
+        <h2>** My Awesome Projects **</h2>
       </div>
       <div class="content">
 
         <div class="project-box">
-          <div class="project-icon"></div>
+           <div class="project-icon"></div>
           <h3>Conversation Dataset Generator</h3>
-          <p>A cutting-edge tool that simplifies and accelerates the creation of conversational datasets (in <span class="tech-term">JSONL</span> format) for chatbots, sentiment analysis, dialogue systems, and more.</p>
+          <p>Zap! Pow! Create conversational datasets (<span class="tech-term">JSONL</span> format) super fast for chatbots, sentiment analysis, and more. It's cutting-edge!</p>
         </div>
 
         <div class="project-box">
-          <div class="project-icon"></div>
+           <div class="project-icon"></div>
           <h3>Basic SCDF Pipeline</h3>
-          <p>A basic <span class="tech-term">Spring Cloud Data Flow</span> docker-compose pipeline featuring source, transform, and sink components to streamline data processing.</p>
+          <p>Check out this basic <span class="tech-term">Spring Cloud Data Flow</span> docker-compose pipeline. Source, transform, sink - easy peasy data processing!</p>
         </div>
 
         <div class="project-box">
-          <div class="project-icon"></div>
+           <div class="project-icon"></div>
           <h3>Keeloq Python</h3>
-          <p>An implementation of the <span class="tech-term">Keeloq</span> crypto system written in Python, showcasing secure communication techniques.</p>
+          <p>Cracking codes! An implementation of the <span class="tech-term">Keeloq</span> crypto system in Python. Totally secure, dude.</p>
         </div>
 
       </div>
     </section>
 
-     <hr class="fancy-rule">
+     <img src="https://i.imgur.com/i3kZ1jX.gif" alt="Animated Divider" class="animated-hr">
 
     <section id="achievements">
       <div class="section-header">
-        <h2>** Skills &amp; Tech **</h2>
+        <h2>** Skills &amp; Achievements! **</h2>
       </div>
       <div class="content">
-        <h3>Achievements</h3>
+        <h3>Leveled Up! (Achievements)</h3>
         <ul>
-          <li>Achievement: <span class="tech-term">YOLO</span></li>
-          <li>Achievement: <span class="tech-term">Arctic Code Vault Contributor</span></li>
-          <li>Achievement: <span class="tech-term">Pull Shark x3</span></li>
-          <li>Achievement: <span class="tech-term">Starstruck</span></li>
+          <li>Achievement: <span class="tech-term">YOLO</span> (You Only Look Once - CV wizardry!)</li>
+          <li>Achievement: <span class="tech-term">Arctic Code Vault Contributor</span> (My code is frozen in time!)</li>
+          <li>Achievement: <span class="tech-term">Pull Shark x3</span> (GitHub beast mode!)</li>
+          <li>Achievement: <span class="tech-term">Starstruck</span> (Coding celeb!)</li>
         </ul>
 
-        <h3>Skills &amp; Technologies</h3>
+        <h3>My Tech Arsenal</h3>
         <ul>
-          <li><strong>Programming Languages:</strong> <span class="tech-term">Python</span>, <span class="tech-term">Java</span></li>
-          <li><strong>Data & AI Platforms:</strong> <span class="tech-term">Nvidia TensorRT</span>, <span class="tech-term">Nvidia TensorRT-LLM</span>, <span class="tech-term">Nvidia NeMo</span>, <span class="tech-term">Apache Spark</span>, <span class="tech-term">Hadoop</span>, and more</li>
-          <li><strong>AI Frameworks:</strong> <span class="tech-term">PyTorch</span>, <span class="tech-term">TensorFlow</span>, <span class="tech-term">Neural Networks</span></li>
-          <li><strong>Cloud Platforms:</strong> <span class="tech-term">AWS</span> (Certified Solutions Architect), <span class="tech-term">Microsoft Azure</span></li>
-          <li><strong>Expertise:</strong> <span class="tech-term">Machine Learning</span>, <span class="tech-term">Real-Time AI at the Edge</span>, <span class="tech-term">Distributed Systems</span>, <span class="tech-term">Data Pipelines</span>, <span class="tech-term">CI/CD</span></li>
+          <li><strong>Code Languages:</strong> <span class="tech-term">Python</span>, <span class="tech-term">Java</span> (Mastered 'em!)</li>
+          <li><strong>Data & AI Platforms:</strong> <span class="tech-term">Nvidia TensorRT</span>, <span class="tech-term">TensorRT-LLM</span>, <span class="tech-term">Nvidia NeMo</span>, <span class="tech-term">Apache Spark</span>, <span class="tech-term">Hadoop</span>, & the whole shabang!</li>
+          <li><strong>AI Frameworks:</strong> <span class="tech-term">PyTorch</span>, <span class="tech-term">TensorFlow</span>, Building wicked <span class="tech-term">Neural Networks</span>!</li>
+          <li><strong>Cloud Power:</strong> <span class="tech-term">AWS</span> (Certified Solutions Architect!), <span class="tech-term">Microsoft Azure</span></li>
+          <li><strong>Special Moves:</strong> <span class="tech-term">Machine Learning</span>, <span class="tech-term">Real-Time AI at the Edge</span>, <span class="tech-term">Distributed Systems</span>, <span class="tech-term">Data Pipelines</span>, <span class="tech-term">CI/CD</span></li>
         </ul>
 
-        <h3>Research Interests</h3>
+        <h3>Future Tech Quests</h3>
         <ul>
-          <li>Exploring <span class="tech-term">continued fraction neural networks</span> for enhanced interpretability in AI</li>
-          <li>Investigating <span class="tech-term">Cache-Augmented Generation (CAG)</span> to reduce latency in retrieval-augmented workflows</li>
+          <li>Exploring <span class="tech-term">continued fraction neural networks</span> for smarter AI!</li>
+          <li>Investigating <span class="tech-term">Cache-Augmented Generation (CAG)</span> for faster AI responses!</li>
         </ul>
       </div>
     </section>
 
-    <hr class="fancy-rule">
+    <img src="https://i.imgur.com/i3kZ1jX.gif" alt="Animated Divider" class="animated-hr">
 
     <section id="speaking">
       <div class="section-header">
-        <h2>** Where I've Spoken **</h2>
+        <h2>** Catch Me On Stage! **</h2>
       </div>
       <div class="content">
+         <h3>Where I've Blabbed About Tech:</h3>
         <ul>
           <li>
-            <strong>Nvidia GTC 2025 (San Jose, CA):</strong> Agentic AI at the Edge – Real-Time Sentiment Analysis for Engaging Customer Interaction.
+            <strong>Nvidia GTC 2025 (San Jose, CA):</strong> Agentic AI at the Edge – Real-Time Sentiment Analysis! (Future!)
           </li>
           <li>
-            <strong>Datacon LA 2021 (Virtual):</strong> Building Production Data Pipelines with Test Driven Development (TDD) and Pair Programming.
+            <strong>Datacon LA 2021 (Virtual):</strong> Building Production Data Pipelines with TDD & Pair Programming.
           </li>
           <li>
-            <strong>Data Intensive Application Meetup (Irvine, CA):</strong> Massive Data Processing at Scale.
-          </li>
-           <li>
-            <strong>SpringOne Platform 2019 (Austin, TX):</strong> High Speed Data Processing with Apache Geode and Spring Cloud Stream.
-          </li>
-           <li>
-            <strong>SpringOne Platform 2018 (Washington, DC):</strong> Continuous Data Governance with Spring Cloud Data Flow.
-          </li>
-           <li>
-            <strong>Apache Geode Summit 2016 (Palo Alto, CA):</strong> Predicting and Preventing Vehicle Failures Using Streaming Telematics Analysis.
-          </li>
-           <li>
-            <strong>IBM Datapalooza 2015 (San Francisco, CA):</strong> Real Time Vehicle Telematics.
+            <strong>Data Intensive Application Meetup (Irvine, CA):</strong> Massive Data Processing at Scale! Rock 'n Roll!
           </li>
           <li>
-            <strong>Pivotal Labs Meetup 2015 (San Francisco, CA):</strong> Predicting & Preventing Vehicle Failures Using Streaming Telematics Analysis.
+            <strong>SpringOne Platform 2019 (Austin, TX):</strong> High Speed Data Processing with Apache Geode & Spring Cloud Stream. Whoosh!
+          </li>
+          <li>
+            <strong>SpringOne Platform 2018 (Washington, DC):</strong> Continuous Data Governance with Spring Cloud Data Flow. Keepin' it clean!
+          </li>
+           <li>
+            <strong>Apache Geode Summit 2016 (Palo Alto, CA):</strong> Predicting Vehicle Failures with Streaming Telematics. Vroom Vroom!
+          </li>
+           <li>
+            <strong>IBM Datapalooza 2015 (San Francisco, CA):</strong> Real Time Vehicle Telematics. The future is NOW!
+          </li>
+          <li>
+            <strong>Pivotal Labs Meetup 2015 (San Francisco, CA):</strong> More Vehicle Telematics wizardry!
           </li>
         </ul>
       </div>
     </section>
 
-    <hr class="fancy-rule">
+     <img src="https://i.imgur.com/i3kZ1jX.gif" alt="Animated Divider" class="animated-hr">
 
-    <section id="retro-game">
-        <div class="section-header">
-            <h2>** Play A Game! **</h2>
-        </div>
-        <div class="content" style="text-align: center;"> <p>Take a break and enjoy some classic Sonic the Hedgehog action, embedded right here like it's 1999!</p>
-            <iframe src="https://www.retrogames.cc/embed/30299-sonic-the-hedgehog-usa-europe.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
-            <p style="font-size: 10px; color: #555;">(Game is loaded from an external site, retrogames.cc. Availability depends on them!)</p>
-        </div>
-    </section>
+     <section id="retro-game">
+         <div class="section-header">
+             <h2>** GAME ZONE! Play Sonic! **</h2>
+         </div>
+         <div class="content" style="text-align: center;">
+             <p>Need a break from all this tech talk? Play some classic Sonic the Hedgehog right here! Gotta go fast!</p>
+             <iframe src="https://www.retrogames.cc/embed/30299-sonic-the-hedgehog-usa-europe.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no" style="border: 3px inset grey;"></iframe>
+             <p style="font-size: 12px; color: #FF00FF; font-family: 'Comic Sans MS', cursive;">(Game loaded from retrogames.cc - Hope it still works!)</p>
+         </div>
+     </section>
 
-    <hr class="fancy-rule">
+    <img src="https://i.imgur.com/i3kZ1jX.gif" alt="Animated Divider" class="animated-hr">
+
     <section id="contact">
       <div class="section-header">
-        <h2>** Get In Touch! **</h2>
+        <h2>** Beam Me A Message! **</h2>
       </div>
       <div class="content" style="text-align:center;">
-          <p>Drop me a line:</p>
+          <p>Wanna chat? Hit me up!</p>
           <p>
-            <span class="spinning-gif" title="Email Icon Placeholder"></span> Email: <a href="mailto:cahlen@gmail.com">cahlen@gmail.com</a>
+             <span class="spinning-gif" title="Email Me!"></span> E-Mail: <a href="mailto:cahlen@gmail.com">cahlen@gmail.com</a> (Don't spam me!)
           </p>
-          <p>Connect professionally:</p>
+          <p>Let's Connect (Professionally... sorta):</p>
           <p>
-            LinkedIn: <a href="https://www.linkedin.com/in/cahlenhumphreys" target="_blank">LinkedIn Profile</a>
+             LinkedIn: <a href="https://www.linkedin.com/in/cahlenhumphreys" target="_blank">My LinkedIn Profile</a>
           </p>
-          <p>Follow my thoughts:</p>
+          <p>My Random Thoughts (140 chars at a time!):</p>
           <p>
-            X (formerly Twitter): <a href="https://x.com/enfuse" target="_blank">@enfuse</a>
+             X (Twitter): <a href="https://x.com/enfuse" target="_blank">Follow @enfuse</a>
           </p>
-          <p>Check out the company:</p>
+          <p>Check out my Awesome Company:</p>
           <p>
-            Website: <a href="https://enfuse.io" target="_blank">Enfuse.io</a>
+             Website: <a href="https://enfuse.io" target="_blank">Enfuse.io - It Rocks!</a>
+          </p>
+          <p style="margin-top: 20px;">
+            <a href="#">** Sign My Guestbook! **</a> (Link doesn't actually work, lol)
           </p>
       </div>
     </section>
 
     <div class="footer">
-      <p>&copy; 1998-2025 Cahlen Humphreys. Welcome to my corner of the web!</p>
-      <p>Site best viewed with Netscape Navigator 4.0 or Internet Explorer 4.0 at 800x600 resolution.</p>
+       <p><img src="https://i.imgur.com/MnU84sN.gif" alt="Under Construction" class="construction-gif">
+          &copy; 1998-2025 Cahlen Humphreys. Welcome to my Slice of the World Wide Web!
+          <img src="https://i.imgur.com/MnU84sN.gif" alt="Under Construction" class="construction-gif">
+       </p>
+      <p>Site best viewed with Netscape Navigator 4.0+ or Internet Explorer 4.0+ at 800x600 resolution. Get with the program!</p>
 
-      <p style="margin-top:10px;">
-          This site is <i>officially</i> best viewed with: <br>
-	 <!-- Linux Button -->
-<a href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">
-    <img 
-        src="https://i.imgur.com/8xPN7k4.gif"
-        alt="Linux Powered"
-        title="Linux Powered"
-        style="width:auto; height:auto; border:none;"
-    >
-</a>
-
-<!-- Internet Explorer Button -->
-<a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank" rel="noopener noreferrer">
-    <img 
-        src="https://i.imgur.com/zSPR0CX.gif"
-        alt="Microsoft Internet Explorer"
-        title="Microsoft Internet Explorer"
-        style="width:auto; height:auto; border:none;"
-    >
-</a>
-
-<!-- Netscape Navigator Button -->
-<a href="https://en.wikipedia.org/wiki/Netscape_Navigator" target="_blank" rel="noopener noreferrer">
-    <img 
-        src="https://i.imgur.com/crCQYXn.gif"
-        alt="Netscape Navigator"
-        title="Netscape Navigator"
-        style="width:auto; height:auto; border:none;"
-    >
-</a>
-          <br>(Just kidding... mostly!)
+      <p style="margin-top:20px;">
+          You are visitor number: <span class="hit-counter">001337</span> (Probably...)
       </p>
-      <p style="margin-top:10px;">
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Powered by GeoCities (Joke)" style="height:15px; vertical-align:middle;"> This site is <span style="font-weight:bold; color:red;">UNDER CONSTRUCTION</span> (aren't they all?)
-        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Under Construction" style="height:15px; vertical-align:middle;">
+
+      <p style="margin-top:20px;">
+          This site is proudly powered by: <br>
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="https://i.imgur.com/9l1fDtP.gif" alt="HTML Powered" title="HTML 3.2 RULES!"></a>
+          <a href="https://notepad-plus-plus.org/" target="_blank"><img src="https://i.imgur.com/M0EIMQW.gif" alt="Made with Notepad" title="Made with Notepad (or something better)"></a>
+          <a href="https://en.wikipedia.org/wiki/Linux" target="_blank"><img src="https://i.imgur.com/8xPN7k4.gif" alt="Linux Powered" title="Linux Powered"></a>
+          <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank"><img src="https://i.imgur.com/zSPR0CX.gif" alt="Microsoft Internet Explorer" title="Best Viewed with IE"></a>
+          <a href="https://en.wikipedia.org/wiki/Netscape_Navigator" target="_blank"><img src="https://i.imgur.com/crCQYXn.gif" alt="Netscape Navigator" title="Netscape Now!"></a>
+          <br>
+          (Click the buttons! They might even work!)
       </p>
-      <p>You are visitor number: <span class="hit-counter">001337</span></p>
+       <p style="margin-top:15px; font-size: 10px; color: grey;">
+          (Disclaimer: Animated GIFs sourced from Imgur examples. Replace with your own finds for maximum authenticity! Background pattern is CSS, find a real tiling GIF for the true 90s feel. Blinking text might cause seizures, use responsibly!)
+       </p>
     </div>
 
-  </div> </body>
+  </div>
+</body>
 </html>
